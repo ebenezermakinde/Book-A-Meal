@@ -104,6 +104,18 @@ p{
   border-bottom: 1px dotted #444;
 }
 
+.menu-images {
+  width: 450px;
+  height: 350px;
+  border-radius: 10%;
+}
+
+.widget {
+  border: 1px solid #666;
+  border-radius: 20px;
+  margin: 0.5rem;
+}
+
 /* Navbar */
 #navbar {
   display: flex;
@@ -352,4 +364,89 @@ p{
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+/* Section: User-menu */
+#user-navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#user-navbar span {
+  color: #7ab436;
+}
+
+#user-navbar div input[type = "search"] {
+  width: 40rem;
+  height: 2rem;
+  border-radius: 5rem;
+}
+
+#user-navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#user-navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem; 
+}
+
+#user-navbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+
+
+.user-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 0.2rem;
+  text-align: center;
+  flex: 3;
+}
+
+.menu:first-child {
+  flex: 1;
+  text-align: left;
+  border-bottom: 1px dotted #333;
+}
+
+.menu ul {
+  display: block;
+  list-style: none;
+  }
+
+.menu ul li {
+  margin: 30px 0;
+  border-bottom: 1px dotted #333;
+}
+
+.menu ul li a {
+  color: #333;
+}
+
+.menu ul li a:hover {
+  color: #fff;
+  background: #93cb52;
+  border-radius: 5px;
+}
+
+.user-avatar {
+  width: 55px;
+  height: 55px;
 }
