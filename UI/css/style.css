@@ -110,6 +110,12 @@ p{
   border-radius: 10%;
 }
 
+.menu-images-small {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+}
+
 .widget {
   border: 1px solid #666;
   border-radius: 20px;
@@ -413,7 +419,7 @@ p{
 
 .menu {
   background: #f4f4f4;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   padding: 1rem;
   margin: 0.2rem;
   text-align: center;
@@ -449,4 +455,41 @@ p{
 .user-avatar {
   width: 55px;
   height: 55px;
+}
+
+/* Section: User-Dashboard */
+#dashboard{
+ background: #f4f4f4;
+}
+
+.user-menu #profile-form label {
+  display: block;
+}
+
+.user-menu #profile-form .form-group{
+  padding: 0.75rem;
+}
+
+.user-menu #profile-form input[type = "text"], 
+input[type = "email"]{
+  border: 1px #fff solid;
+  border-radius: 1rem;
+  padding: 0.75rem;
+  background: #ddd;
+  text-align: center;
+}
+#my-order {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.my-order {
+  flex: 1;
+}
+
+#dashboard #main-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
