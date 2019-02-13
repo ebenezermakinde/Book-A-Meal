@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="./css/widescreen.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous">
+  <link rel="icon" href="./images/logos/book-meal-logo.png" type="image/x-icon">
+  <title>Book-A-Meal | Caterer</title>
+</head>
+
+<body id="dashboard">
+  <!-- Navbar -->
+  <nav id="user-navbar">
+    <h1 class="logo">
+      <span class="text-primary">
+        <i class="fas fa-book-open"> Book</i></span>-A-Meal <span>&#9832;</span>
+    </h1>
+    <div><input type="search" name="search" id="search" placeholder="Search Item"></div>
+    <ul>
+      <li><a href="./index.html">Log Out</a></li>
+    </ul>
+  </nav>
+  <!-- Section: Caterer-Dashboard -->
+  <div class="container">
+    <h1>Dashboard</h1>
+    <section class="caterer-dashboard">
+      <aside class="item1">
+        <div>
+          <img src="./images/logos/user-avatar.png" alt="" class="user-avatar">
+          <p>Hi, Chef Nike</p>
+        </div>
+        <ul>
+          <li><a href="./catererdashboard.html"><span><i class="fas fa-tachometer-alt"></i></span> Dashboard</a></li>
+          <li><a href="#"><span><i class="fas fa-plus"></i></span> Add Menu</a></li>
+          <li><a href="#"><span><i class="fas fa-tasks"></i></span> Manage Menu</a></li>
+        </ul>
+      </aside>
+
+
+      <div class="item1">
+        <!-- Div: Panel-body -->
+        <div id="panel-body">
+          <div class="panel-body">
+            <h3 class="m-heading"><span><i class="fas fa-chart-bar"></i></span> 500</h3>
+            <h4 class="m-heading">Orders</h4>
+          </div>
+          <div class="panel-body">
+            <h3 class="m-heading">&#8358; 65,000</h3>
+            <h4 class="m-heading">Cash</h4>
+          </div>
+          <div class="panel-body">
+            <h3 class="m-heading"><i class="fas fa-users"></i> 40</h3>
+            <h4 class="m-heading">Users</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Order details -->
+    <section id="order-details">
+      <aside class="order-details">
+        <ul>
+          <li>Todo List</li>
+          <li>Use Links</li>
+          <li>Powered by hunger</li>
+        </ul>
+      </aside>
+      <div class="order-details">
+        <div id="order-table">
+          <table>
+            <thead>
+              <th>S/N</th>
+              <th>Name</th>
+              <th>Order</th>
+              <th>Price</th>
+              <th>email</th>
+              <th>Order Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Ebenezer Obey</td>
+                <td>Beans & Plantain</td>
+                <td>&#8358;1850.39</td>
+                <td>ebenezer@ymail.com</td>
+                <td>11/03/2019; 08:45am</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Mary Amaka</td>
+                <td>Yellow Gari & Soup</td>
+                <td>&#8358;850.39</td>
+                <td>amakababe@gmail.com</td>
+                <td>11/03/2019; 18:45pm</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Hamza Bala</td>
+                <td>Noodles & Plantain</td>
+                <td>&#8358;1550.79</td>
+                <td>hamzito@ymail.com</td>
+                <td>11/03/2019; 10:05am</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Obinna Eze</td>
+                <td>Pounded Yam & Egusi</td>
+                <td>&#8358;2850.39</td>
+                <td>obitrice@aol.com</td>
+                <td>11/03/2019; 13:45pm</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Ebenezer Obey</td>
+                <td>Beans & Plantain</td>
+                <td>&#8358;1850.19</td>
+                <td>ebenezer@ymail.com</td>
+                <td>11/03/2019; 08:45am</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Oghene Igbinedion</td>
+                <td>Fufu & Okro Soup</td>
+                <td>&#8358;1250.00</td>
+                <td>oghene@gmail.com</td>
+                <td>11/03/2019; 15:25pm</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Patrick Igbinedion</td>
+                <td>Fufu & Okro Soup</td>
+                <td>&#8358;1250.00</td>
+                <td>oghene@gmail.com</td>
+                <td>11/03/2019; 15:25pm</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Johans Igbinedion</td>
+                <td>Fufu & Okro Soup</td>
+                <td>&#8358;1250.00</td>
+                <td>oghene@gmail.com</td>
+                <td>11/03/2019; 15:25pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Footer -->
+  <footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+      <p>Copyright &copy; 2019. Book-A-Meal, All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+
+</html>
