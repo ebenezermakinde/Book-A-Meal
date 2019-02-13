@@ -462,16 +462,16 @@ p{
  background: #f4f4f4;
 }
 
-.user-menu #profile-form label {
+.menu #profile-form label {
   display: block;
 }
 
-.user-menu #profile-form .form-group{
+.menu #profile-form .form-group{
   padding: 0.75rem;
 }
 
-.user-menu #profile-form input[type = "text"], 
-input[type = "email"]{
+.menu #profile-form input[type = "text"], 
+.menu #profile-form input[type = "email"]{
   border: 1px #fff solid;
   border-radius: 1rem;
   padding: 0.75rem;
@@ -492,4 +492,94 @@ input[type = "email"]{
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+/* Section: Caterer */
+.container h1 {
+  margin: 1rem 0;
+  background: #fff;
+}
+.caterer-dashboard {
+  display: flex;
+}
+
+.caterer-dashboard aside {
+  border: 1px solid #ddd;
+  display: inline-block;
+}
+
+.caterer-dashboard aside div {
+  text-align: center;
+}
+
+.caterer-dashboard aside ul li {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.caterer-dashboard aside ul li a {
+  color: #333;
+}
+
+.item1 ul li a:hover {
+  background: #7ab436;
+  color: #fff;
+  padding: 0.75rem 0.4rem;
+  border-radius: 2rem;
+}
+
+.caterer-dashboard .item1,
+#order-details .order-details {
+  flex: 1;
+  padding: 1rem;
+}
+
+.caterer-dashboard .item1:last-child,
+#order-details .order-details:last-child {
+  flex: 5;
+}
+
+/* Panel Body Styling */
+.item1 #panel-body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item1 #panel-body .panel-body {
+  border: 1px solid #fff;
+  background: #fff;
+  text-align: center;
+  border-radius: 10%;
+}
+
+/* Section: Order-details */
+#order-details {
+  display: flex;
+  margin-top: 2rem;
+}
+
+#order-details aside {
+  border: 1px solid #ddd;
+  display: inline-block;
+}
+
+#order-details aside ul li { 
+  list-style: none;
+  padding: 0.3rem 0 0 0;
+}
+
+#order-details table {
+  border: 1px solid #333;
+  margin-left: 4rem;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#order-details table th,tr,td {
+  padding-top: 0.75rem;
+  border: 1px solid #333;
+}
+
+#order-details table tr:nth-child(even) {
+background: #ccc;
 }
