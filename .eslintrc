@@ -6,5 +6,8 @@
       "error",
       "windows"
     ]
+  },
+  "env": {
+    "mocha": true
   }
 }
