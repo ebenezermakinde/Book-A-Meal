@@ -20,4 +20,16 @@ describe('Meals', () => {
         });
     });
   });
+  describe('POST /api/v1/meals', () => {
+    // Test to post a meal.
+    it('should create a meal record', (done) => {
+      chai.request(app)
+        .post('/api/v1/meals')
+        .end((err, res) => {
+          res.should.have.status(201);
+          res.body.should.be.a('object');
+          done();
+        });
+    });
+  });
 });
