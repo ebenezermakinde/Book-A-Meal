@@ -25,3 +25,24 @@ vendor know what the customers want to eat.
    the day has been set.
 3. Admin (Caterer) should be able to see order history.
 4. The application should be able to host more than one caterer.
+
+## Project Management
+
+### Pivotal Tracker
+https://www.pivotaltracker.com/n/projects/2241777
+
+## Live UI
+https://ebenezermakinde.github.io/Book-A-Meal/UI
+
+### Technologies Used.
+* NodeJS
+* Express
+* Babel, Eslint, Mocha, Chai.
+* Postman
+
+### API Endpoints.
+
+Verb   | Endpoint              | Action                       |
+-------|-----------------------|------------------------------|
+GET    | /meals/               |Get all meal options          |
+POST   | /meals/               |Add a meal option             |
