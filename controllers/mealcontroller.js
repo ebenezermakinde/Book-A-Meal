@@ -1,12 +1,22 @@
-import meals from '../utils/dummy.meals';
+import MealService from '../services/meal.service';
 
-class MealController {
+const MealController = {
   // Get all the meals
-  static fetchAllMeals(req, res) {
+  getAllMeals(req, res) {
+    const allMeals = MealService.getAllMeals();
     return res.status(200).json({
       status: 200,
-      data: meals,
+      data: allMeals,
     });
-  }
-}
+  },
+  createAMeal(req, res) {
+    const newMeal = req.body;
+    const createdMeal = MealService.createMeal(newMeal);
+
+    return res.status(201).json({
+      status: 201,
+      data: createdMeal,
+    });
+  },
+};
 export default MealController;

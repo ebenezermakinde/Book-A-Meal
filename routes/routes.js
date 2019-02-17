@@ -1,8 +1,11 @@
 import { Router } from 'express';
+
 import MealController from '../controllers/mealcontroller';
+import validateCreateMeal from '../middleware/validators/meals.validate';
 
-const routes = Router();
+const router = Router();
 
-routes.get('/api/v1/meals', MealController.fetchAllMeals);
+router.get('/api/v1/meals', MealController.getAllMeals);
+router.post('/api/v1/meals', validateCreateMeal, MealController.createAMeal);
 
-export default routes;
+export default router;
